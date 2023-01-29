@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+
+
+
+.main-container {
+	width: 430px;
+	height: 540px;
+	position: relative;
+	margin: 3px 1px;
+}
+
+.poster-container {
+	width: 430px;
+	height: 100px;
+	
+	position: relative;
+	border: 6px solid green;
+	padding: 10px;
+	top: 0;
+	left: 20px;
+	z-index: -1;
+	flex-shrink: 0; /* prevent items from shrinking */
+  flex-basis: 20%; /* define the initial size of the items */
+  margin: 10px;
+}
+
+.poster {
+	width: 450px;
+	height: auto;
+	
+	transition: padding 0.3s ease-in-out;
+	
+	padding: 0px;
+	top: 0;
+	
+	z-index: -1;
+	flex-shrink: 0; /* prevent items from shrinking */
+  flex-basis: 20%; /* define the initial size of the items */
+  margin: 0px;
+}
+
+.poster:hover{
+	padding: 10px;
+
+}
+@media only screen and (max-width: 600px) {
+	
+	.poster {
+		width: 100%;
+		
+	}
+
+
+}
